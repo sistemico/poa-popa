@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "./scripts/build.sh",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "deploy-on-test": "./scripts/deploy-on-test.sh",
     "lint": "./scripts/lint.sh",
     "preinstall": "./scripts/preinstall.sh",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "common-tags": "^1.7.2",
+    "coveralls": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
